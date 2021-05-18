@@ -1,0 +1,67 @@
+{
+  "appId": "com.jgraph.drawio.desktop",
+  "copyright": "Copyright 2017-2019 draw.io",
+  "asar": true,
+  "files": [
+    "**/*",
+    "!**/WEB-INF{,/**}"
+  ],
+  "artifactName": "${productName}-${arch}-${version}.${ext}",
+  "directories": {
+    "app": "./drawio/src/main/webapp",
+    "output": "./dist/"
+  },
+  "npmRebuild": false,
+  "publish": {
+      "provider": "github"
+  },
+  "mac": {
+  	"hardenedRuntime": true,
+  	"gatekeeperAssess": false,
+  	"entitlements": "build/entitlements.mac.plist",
+  	"entitlementsInherit": "build/entitlements.mac.plist",
+    "category": "public.app-category.graphics-design",
+    "target": [
+      { "target": "zip", "arch": [
+          "x64",
+          "arm64"
+        ]
+      },
+      { "target": "dmg", "arch": [
+          "x64",
+          "arm64"
+        ]
+      }
+    ]
+  },
+  "afterSign": "build/notarize.js",
+  "dmg": {
+  },
+  "linux": {
+  	"executableName": "drawio",
+    "category": "Graphics",
+    "maintainer": "JGraph <support@draw.io>",
+    "icon": "./build",
+    "target": [
+      "AppImage",
+      "deb",
+      "rpm"
+    ]
+  },
+  "fileAssociations": [
+	  {
+	  	"ext": "drawio",
+	  	"name": "draw.io Diagram",
+	  	"description": "draw.io Diagram",
+	  	"mimeType": "application/vnd.jgraph.mxfile",
+	  	"role": "Editor"
+	  },
+	  {
+	  	"ext": "vsdx",
+	  	"name": "VSDX Document",
+	  	"description": "VSDX Document",
+	  	"mimeType": "application/vnd.visio",
+	  	"role": "Editor"
+	  }
+  ]
+}

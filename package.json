@@ -1,0 +1,48 @@
+{
+  "name": "draw.io",
+  "version": "14.6.13",
+  "description": "diagrams.net desktop",
+  "main": "electron.js",
+  "scripts": {
+    "start": "electron ./drawio/src/main/webapp",
+    "sync": "node ./sync.js",
+    "release-win": "electron-builder --config electron-builder-win.json --publish never",
+    "release-win32": "electron-builder --config electron-builder-win32.json --publish never",
+    "release-appx": "electron-builder --config electron-builder-appx.json --publish never",
+    "release-linux": "electron-builder --config electron-builder-linux-mac.json --publish never",
+    "release-snap": "electron-builder --config electron-builder-snap.json --publish never"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jgraph/drawio-desktop.git"
+  },
+  "keywords": [
+    "draw.io",
+    "diagram",
+    "flowchart",
+    "UML"
+  ],
+  "author": "JGraph <support@draw.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jgraph/drawio-desktop/issues"
+  },
+  "homepage": "https://github.com/jgraph/drawio",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "compression": "^1.7.4",
+    "crc": "^3.8.0",
+    "electron-log": "^4.3.5",
+    "electron-progressbar": "^2.0.0",
+    "electron-store": "^8.0.0",
+    "electron-updater": "^4.3.9",
+    "pdf-lib": "^1.16.0"
+  },
+  "devDependencies": {
+    "dotenv": "^9.0.2",
+    "electron": "^12.0.6",
+    "electron-builder": "^22.10.5",
+    "electron-notarize": "^1.0.0",
+    "sumchecker": "^3.0.1"
+  }
+}

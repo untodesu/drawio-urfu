@@ -371,8 +371,7 @@ function setCurrentXml(data, filename)
 })();
 
 // Enables offline mode
-if (urlParams['offline'] == '1' || urlParams['demo'] == '1' || 
-		urlParams['stealth'] == '1' || urlParams['local'] == '1' || urlParams['lockdown'] == '1')
+if (urlParams['offline'] == '1' || urlParams['demo'] == '1' || urlParams['stealth'] == '1' || urlParams['local'] == '1' || urlParams['lockdown'] == '1')
 {
 	urlParams['picker'] = '0';
 	urlParams['gapi'] = '0';
@@ -396,8 +395,7 @@ if (window.location.hostname == 'embed.diagrams.net')
 }	
 
 // Fallback for cases where the hash property is not available
-if ((window.location.hash == null || window.location.hash.length <= 1) &&
-	urlParams['open'] != null)
+if ((window.location.hash == null || window.location.hash.length <= 1) && urlParams['open'] != null)
 {
 	window.location.hash = urlParams['open'];
 }

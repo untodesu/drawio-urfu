@@ -458,55 +458,6 @@
         <fillstroke/>
     </foreground>
 </shape>
-<shape name="Multi-Document" h="60.28" w="88" aspect="variable" strokewidth="inherit">
-<connections>
-<constraint x="0.5" y="0" perimeter="0" name="N"/>
-<constraint x="0.5" y="0.88" perimeter="0" name="S"/>
-<constraint x="0" y="0.5" perimeter="0" name="W"/>
-<constraint x="1" y="0.5" perimeter="0" name="E"/>
-<constraint x="0.08" y="0.1" perimeter="0" name="NW"/>
-<constraint x="0" y="0.91" perimeter="0" name="SW"/>
-<constraint x="0.98" y="0.02" perimeter="0" name="NE"/>
-<constraint x="0.885" y="0.91" perimeter="0" name="SE"/>
-</connections>
-<background>
-<path>
-<move x="10" y="5"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="15" y="0"/>
-<line x="83" y="0"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="88" y="5"/>
-<line x="88" y="45"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="0" x="49" y="45"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="10" y="45"/>
-<close/>
-</path>
-</background>
-<foreground>
-<fillstroke/>
-<path>
-<move x="5" y="10"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="10" y="5"/>
-<line x="78" y="5"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="83" y="10"/>
-<line x="83" y="50"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="0" x="44" y="50"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="5" y="50"/>
-<close/>
-</path>
-<fillstroke/>
-<path>
-<move x="0" y="15"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="5" y="10"/>
-<line x="73" y="10"/>
-<arc rx="5" ry="5" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="78" y="15"/>
-<line x="78" y="55"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="0" x="39" y="55"/>
-<arc rx="50" ry="50" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="0" y="55"/>
-<close/>
-</path>
-<fillstroke/>
-</foreground>
-</shape>
 <shape name="Off-page Reference" h="60" w="60" aspect="variable" strokewidth="inherit">
 <connections>
 <constraint x="0.5" y="0" perimeter="0" name="N"/>
@@ -615,28 +566,6 @@
 <constraint x="1" y="1" perimeter="0" name="SE"/>
 </connections>
 <background>
-<save/>
-<fillcolor color="#ffff00"/>
-<path>
-<move x="47" y="15"/>
-<line x="52" y="20"/>
-<line x="47" y="25"/>
-<line x="42" y="20"/>
-<line x="47" y="15"/>
-<close/>
-<move x="27" y="15"/>
-<line x="32" y="20"/>
-<line x="27" y="25"/>
-<line x="22" y="20"/>
-<line x="27" y="15"/>
-<close/>
-<move x="67" y="15"/>
-<line x="72" y="20"/>
-<line x="67" y="25"/>
-<line x="62" y="20"/>
-<line x="67" y="15"/>
-<close/>
-</path>
 </background>
 <foreground>
 <fillstroke/>
@@ -781,42 +710,6 @@
 <stroke/>
 </foreground>
 </shape>
-<shape name="Start 1" h="60" w="99" aspect="variable" strokewidth="inherit">
-<connections>
-<constraint x="0.5" y="0" perimeter="0" name="N"/>
-<constraint x="0.5" y="1" perimeter="0" name="S"/>
-<constraint x="0" y="0.5" perimeter="0" name="W"/>
-<constraint x="1" y="0.5" perimeter="0" name="E"/>
-<constraint x="0.145" y="0.145" perimeter="0" name="NW"/>
-<constraint x="0.145" y="0.855" perimeter="0" name="SW"/>
-<constraint x="0.855" y="0.145" perimeter="0" name="NE"/>
-<constraint x="0.855" y="0.855" perimeter="0" name="SE"/>
-</connections>
-<background>
-<ellipse x="0" y="0" w="99" h="60"/>
-</background>
-<foreground>
-<fillstroke/>
-</foreground>
-</shape>
-<shape name="Start 2" h="99" w="99" aspect="variable" strokewidth="inherit">
-<connections>
-<constraint x="0.5" y="0" perimeter="0" name="N"/>
-<constraint x="0.5" y="1" perimeter="0" name="S"/>
-<constraint x="0" y="0.5" perimeter="0" name="W"/>
-<constraint x="1" y="0.5" perimeter="0" name="E"/>
-<constraint x="0.145" y="0.145" perimeter="0" name="NW"/>
-<constraint x="0.145" y="0.855" perimeter="0" name="SW"/>
-<constraint x="0.855" y="0.145" perimeter="0" name="NE"/>
-<constraint x="0.855" y="0.855" perimeter="0" name="SE"/>
-</connections>
-<background>
-<ellipse x="0" y="0" w="99" h="99"/>
-</background>
-<foreground>
-<fillstroke/>
-</foreground>
-</shape>
 <shape name="Stored Data" h="60" w="96.51" aspect="variable" strokewidth="inherit">
 <connections>
 <constraint x="0.5" y="0" perimeter="0" name="N"/>
@@ -890,27 +783,6 @@
 <arc rx="30" ry="30" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="68" y="60"/>
 <line x="30" y="60"/>
 <arc rx="30" ry="30" x-axis-rotation="0" large-arc-flag="0" sweep-flag="1" x="30" y="0"/>
-<close/>
-</path>
-</background>
-<foreground>
-<fillstroke/>
-</foreground>
-</shape>
-<shape name="Transfer" h="70" w="97.5" aspect="variable" strokewidth="inherit">
-<connections>
-<constraint x="0" y="0.5" perimeter="0" name="W"/>
-<constraint x="1" y="0.5" perimeter="0" name="E"/>
-</connections>
-<background>
-<path>
-<move x="0" y="20"/>
-<line x="59" y="20"/>
-<line x="59" y="0"/>
-<line x="97.5" y="35"/>
-<line x="59" y="70"/>
-<line x="59" y="50"/>
-<line x="0" y="50"/>
 <close/>
 </path>
 </background>

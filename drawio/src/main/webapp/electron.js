@@ -174,6 +174,9 @@ function createWindow (opt = {})
 		windowsRegistry.splice(index, 1)
 	})
 	
+    // URFU: maximize by default
+    mainWindow.maximize();
+    
 	return mainWindow
 }
 

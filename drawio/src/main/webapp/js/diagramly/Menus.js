@@ -688,6 +688,7 @@
 			}
 		}));
 		
+        /* URFU: we are a fork...
 		editorUi.actions.addAction('support...', function()
 		{
 			if (EditorUi.isElectronApp)
@@ -699,6 +700,7 @@
 				editorUi.openLink('https://github.com/jgraph/drawio/wiki/Getting-Support');
 			}
 		});
+        */
 
 		editorUi.actions.addAction('exportOptionsDisabled...', function()
 		{
@@ -706,6 +708,7 @@
 				mxResources.get('exportOptionsDisabled'));
 		});
 
+        /* URFU: bruh...
 		editorUi.actions.addAction('keyboardShortcuts...', function()
 		{
 			if (mxClient.IS_SVG && !mxClient.IS_CHROMEAPP && !EditorUi.isElectronApp)
@@ -717,6 +720,7 @@
 				editorUi.openLink('https://viewer.diagrams.net/#Uhttps%3A%2F%2Fviewer.diagrams.net%2Fshortcuts.svg');
 			}
 		});
+        */
 
 		editorUi.actions.addAction('feedback...', function()
 		{
@@ -725,11 +729,14 @@
 			dlg.init();
 		});
 
+        /* URFU: we are a fork...
 		editorUi.actions.addAction('quickStart...', function()
 		{
 			editorUi.openLink('https://www.youtube.com/watch?v=Z0D96ZikMkc');
 		});
-		
+        */
+        
+        /* URFU: we sure are already a fork...
 		editorUi.actions.addAction('forkme', function()
 		{
 			if (EditorUi.isElectronApp)
@@ -741,7 +748,8 @@
 				editorUi.openLink('https://github.com/jgraph/drawio');
 			}
 		}).label = 'Fork me on GitHub...';
-		
+		*/
+        
 		editorUi.actions.addAction('downloadDesktop...', function()
 		{
 			editorUi.openLink('https://get.diagrams.net/');
@@ -1273,80 +1281,7 @@
 		
 		this.put('help', new Menu(mxUtils.bind(this, function(menu, parent)
 		{
-			if (!mxClient.IS_CHROMEAPP && editorUi.isOffline())
-			{
-				this.addMenuItems(menu, ['about'], parent);
-			}
-			else
-			{
-				// No translation for menu item since help is english only
-				var item = menu.addItem('Search:', null, null, parent, null, null, false);
-				item.style.backgroundColor = Editor.isDarkMode() ? '#505759' : 'whiteSmoke';
-				item.style.cursor = 'default';
-				
-				var input = document.createElement('input');
-				input.setAttribute('type', 'text');
-				input.setAttribute('size', '25');
-				input.style.marginLeft = '8px';
-
-				mxEvent.addListener(input, 'keydown', mxUtils.bind(this, function(e)
-				{
-					var term = mxUtils.trim(input.value);
-					
-					if (e.keyCode == 13 && term.length > 0)
-					{
-						this.editorUi.openLink('https://www.google.com/search?q=site%3Adiagrams.net+inurl%3A%2Fdoc%2Ffaq%2F+' +
-							encodeURIComponent(term));
-						input.value = '';
-						EditorUi.logEvent({category: 'SEARCH-HELP', action: 'search', label: term});
-						
-						window.setTimeout(mxUtils.bind(this, function()
-						{
-							this.editorUi.hideCurrentMenu();
-						}), 0);
-					}
-	                else if (e.keyCode == 27)
-	                {
-	                    input.value = '';
-	                }
-				}));
-				
-				item.firstChild.nextSibling.appendChild(input);
-				
-				mxEvent.addGestureListeners(input, function(evt)
-				{
-					if (document.activeElement != input)
-					{
-						input.focus();
-					}
-					
-					mxEvent.consume(evt);
-				}, function(evt)
-				{
-					mxEvent.consume(evt);
-				}, function(evt)
-				{
-					mxEvent.consume(evt);
-				});
-				
-				window.setTimeout(function()
-				{
-					input.focus();
-				}, 0);
-
-				if (EditorUi.isElectronApp)
-				{
-					console.log('electron help menu');
-					this.addMenuItems(menu, ['-', 'keyboardShortcuts', 'quickStart',
-						'support', '-', 'forkme', '-', 'about'], parent);
-
-				}
-				else
-				{
-					this.addMenuItems(menu, ['-', 'keyboardShortcuts', 'quickStart',
-						'support', '-', 'forkme', 'downloadDesktop', '-', 'about'], parent);
-				}
-			}
+			this.addMenuItems(menu, ['about'], parent);
 			
 			if (urlParams['test'] == '1')
 			{
@@ -2017,6 +1952,7 @@
 			});
 		}
 		
+        /* URFU: why?
 		var action = editorUi.actions.addAction('search', function()
 		{
 			var visible = editorUi.sidebar.isEntryVisible('search');
@@ -2028,6 +1964,7 @@
 				mxSettings.save();
 			}
 		});
+        */
 		
 		action.setToggleAction(true);
 		action.setSelectedCallback(function() { return editorUi.sidebar.isEntryVisible('search'); });

@@ -25,7 +25,7 @@ Menus.prototype.defaultFont = 'Times New Roman';
 /**
  * Sets the default font size.
  */
-Menus.prototype.defaultFontSize = '12';
+Menus.prototype.defaultFontSize = '14';
 
 /**
  * Sets the default font size.

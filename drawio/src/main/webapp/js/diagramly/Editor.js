@@ -20,8 +20,9 @@
 
 	/**
 	 * Specifies the app name. Default is document.title.
+     * URFU: title change
 	 */
-	Editor.prototype.appName = 'diagrams.net';
+	Editor.prototype.appName = 'Draw.io fork for UrFU';
 		
 	/**
 	 * Known file types.

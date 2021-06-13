@@ -136,6 +136,11 @@ function createWindow (opt = {})
 						var choice = dialog.showMessageBoxSync(
 							win,
 							{
+                                // URFU: I can't change this to a localized variant
+                                // since mxResources is not defined (yet).
+                                // TODO: I don't have any more time (I need to finish this today)
+                                // to fix this but if I will _ever_ try to revamp this project,
+                                // this needs to be fixed eventually.
 								type: 'question',
 								buttons: ['Cancel', 'Discard Changes'],
 								title: 'Confirm',

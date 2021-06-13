@@ -2605,11 +2605,12 @@ App.prototype.createBackground = function()
  */
 App.prototype.appIconClicked = function(evt)
 {
-    /* URFU: we forked...
 	if (mxEvent.isAltDown(evt))
 	{
-		this.showSplash(true);
+		this.showSplash();
 	}
+    
+    /* URFU: we forked...
 	else
 	{
 		var file = this.getCurrentFile();
@@ -2701,9 +2702,6 @@ App.prototype.appIconClicked = function(evt)
 		}
 	}
 	URFU */
-    
-    /* URFU: just show the splash instead */
-    this.showSplash();
     
 	mxEvent.consume(evt);
 };
